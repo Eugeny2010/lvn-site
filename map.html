@@ -30,6 +30,13 @@
   <link rel="icon" href="LVN2.png" type="image/x-icon">
    <script src="leaflet.js"></script>
 
+<style> 
+    #abs{
+                
+       z-index: 1000;
+            }
+    
+</style>
 
 <link rel="stylesheet" href="leaflet.css"/>
     <style type="text/css">
@@ -87,6 +94,7 @@
 
     <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
 
+
       <div class="container-fluid">
         <div class="d-flex align-items-center">
           <div class="site-logo"><a href="index.html"><img src="LVN2.png" height="80px" width="80px"></a></div>
@@ -108,9 +116,11 @@
         </div>
       </div>
 
+
     </header>
 
-    
+  
+   
             <div id="map"></div>
 
    
@@ -159,6 +169,7 @@ L.geoJson(ens, enss).addTo(map)
     .bindPopup('<h2>Единый Народный Союз</h2>'+ensi)
   </script>
     </div>
+
 
           
 
