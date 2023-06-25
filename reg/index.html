@@ -2,7 +2,7 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>Зарегистрироваться | ЛВН</title>
+  <title>Log in/Sign up screen animation</title>
   
   
   
@@ -17,36 +17,34 @@
 <div class="container">
   <div class="frame">
     <div class="nav">
-      <ul class links>
-        <li class="signin-active"><a class="btn">Войти</a></li>
-        <li class="signup-inactive"><a class="btn">Зарегистрироваться</a></li>
+      <ul class"links">
+        <li class="signin-active"><a class="btn">Sign in</a></li>
+        <li class="signup-inactive"><a class="btn">Sign up </a></li>
       </ul>
     </div>
     <div ng-app ng-init="checked = false">
 				        <form class="form-signin" action="" method="post" name="form">
-          <label for="username">Логин или почта</label>
+          <label for="username">Username</label>
           <input class="form-styling" type="text" name="username" placeholder=""/>
-          <label for="password">Пароль</label>
+          <label for="password">Password</label>
           <input class="form-styling" type="text" name="password" placeholder=""/>
           <input type="checkbox" id="checkbox"/>
-          <label for="checkbox" ><span class="ui"></span>Запомнить меня</label>
+          <label for="checkbox" ><span class="ui"></span>Keep me signed in</label>
           <div class="btn-animate">
-            <a class="btn-signin">Войти</a>
+            <a class="btn-signin">Sign in</a>
           </div>
 				        </form>
         
 				        <form class="form-signup" action="" method="post" name="form">
-          <label for="fullname">Фамилия, имя</label>
+          <label for="fullname">Full name</label>
           <input class="form-styling" type="text" name="fullname" placeholder=""/>
-          <label for="email">Электронная почта</label>
+          <label for="email">Email</label>
           <input class="form-styling" type="text" name="email" placeholder=""/>
-          <label for="password">Логин</label>
+          <label for="password">Password</label>
           <input class="form-styling" type="text" name="password" placeholder=""/>
-          <label for="confimpassword">Пароль</label>
+          <label for="confirmpassword">Confirm password</label>
           <input class="form-styling" type="text" name="confirmpassword" placeholder=""/>
-          <label for="confimpassword">Подтвердите пароль</label>
-          <input class="form-styling" type="text" name="mpassword" placeholder=""/>
-          <a ng-click="checked = !checked" class="btn-signup">Зарегистрироваться</a>
+          <a ng-click="checked = !checked" class="btn-signup">Sign Up</a>
 				        </form>
       
             <div  class="success">
@@ -56,20 +54,20 @@
                   c3.894-6.28,11.169-10.243,19.283-9.348c9.258,1.021,16.694,8.542,17.622,17.81c1.232,12.295-8.683,22.607-20.849,22.042
                   c-9.9-0.46-18.128-8.344-18.972-18.218c-0.292-3.416,0.276-6.673,1.51-9.578" />
                 <div class="successtext">
-                   <p> Вы зарегистрировались! Теперь можно спокойно подавать заявку на вступление в ООВГ.</p>
+                   <p> Thanks for signing up! Check your email for confirmation.</p>
                 </div>
              </div>
       </div>
       
       <div class="forgot">
-        <a href="#">Забыли пароль?</a>
+        <a href="#">Forgot your password?</a>
       </div>
       
       <div>
         <div class="cover-photo"></div>
         <div class="profile-photo"></div>
-        <h1 class="welcome">Здравствуйте!</h1>
-        <a class="btn-goback" value="Refresh" onClick="history.go()">Назад</a>
+        <h1 class="welcome">Welcome, Chris</h1>
+        <a class="btn-goback" value="Refresh" onClick="history.go()">Go back</a>
       </div>
   </div>
     
